@@ -1,6 +1,7 @@
 {
  "title":  "Cadastro de usuários",
  "name": "AAA User",
- "email": "aaauser@test.com",
- "password": "AAAuserTest"
+ "email": "aaauser@gmail.com",
+ "password": "AAAuserTest",
+ "alerta": "Este email já está sendo usado"
 }
