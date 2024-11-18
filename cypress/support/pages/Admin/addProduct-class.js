@@ -12,8 +12,9 @@ class addProducts {
         cy.get(el.price).type(data.price);
         cy.get(el.description).type(data.description);
         cy.get(el.quantity).type(data.quantity);
-        cy.get(el.image).selectFile('./cypress/support/importFiles/image.png')
+        cy.get(el.image).selectFile('./cypress/support/importFiles/image.png');
         cy.get(el.addButton).click();
+        cy.wait(3000);
     }
 
  

@@ -3,7 +3,7 @@ const el = require ('../support/attributes/Admin/login-attributes').ELEMENTS;
 
 Cypress.Commands.add('login', (
     username = 'novaes.aracelli@gmail.com', 
-    password = 'dumont112' ) => {
+    password = 'teste123.' ) => {
         cy.session([username, password], () => {
            
             cy.visit('/')

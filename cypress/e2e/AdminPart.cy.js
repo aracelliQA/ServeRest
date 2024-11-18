@@ -2,6 +2,8 @@ import home from '../support/pages/Admin/home-class'
 import addUser from '../support/pages/Admin/addUser-class'
 import listUser from '../support/pages/Admin/listUser-class'
 import addProduct from '../support/pages/Admin/addProduct-class'
+import listProducts from '../support/pages/Admin/listProducts-class'
+
 
 describe('ServeRest - Admin user', () => {
 
@@ -26,7 +28,8 @@ describe('ServeRest - Admin user', () => {
      addProduct.add();
   });
 
-  it('List products', () => {
-    
+  it.only('List products', () => {
+    listProducts.list();
   });
+
 })
