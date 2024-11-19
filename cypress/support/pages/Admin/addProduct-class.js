@@ -3,6 +3,18 @@ const data = require ('../../../fixtures/Admin/addProduct-data.json')
 import '../../commands'
 
 class addProducts {
+    requiredFields(){
+        cy.login();
+        cy.wait(2000);
+        cy.visit('/admin/cadastrarprodutos');
+        cy.wait(2000);
+        cy.get(el.addButton).click();
+        cy.contains(data.alertName).should('be.visible');
+        cy.contains(data.alertPrice).should('be.visible');
+        cy.contains(data.alertDescription).should('be.visible');
+        cy.contains(data.alertQuantity).should('be.visible');
+    }
+
     add(){
         cy.login();
         cy.wait(2000);

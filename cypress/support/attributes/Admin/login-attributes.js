@@ -4,5 +4,6 @@ export const ELEMENTS = {
     loginButton: '[data-testid="entrar"]',
     form: '.form',
     createAccount: '[data-testid="cadastrar"]',
-    title: '.font-robot'
+    title: '.font-robot',
+    logoutButton: '[data-testid="logout"]'
 }

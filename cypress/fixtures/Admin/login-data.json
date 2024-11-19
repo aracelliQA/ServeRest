@@ -1,0 +1,8 @@
+{
+  "invalidUsername": "teste000@00043" ,
+  "invalidPassword": "1234567",
+  "username": "novaes.aracelli@gmail.com",
+  "password": "teste123.",
+  "alertEmail": "Email deve ser um email válido",
+  "alertPassword": "Email e/ou senha inválidos"
+}

@@ -2,6 +2,10 @@
     "name": "Test Product",
     "price": "26780",
     "description": "Product description test.",
-    "quantity": "100"
+    "quantity": "100",
+    "alertName": "Nome é obrigatório",
+    "alertPrice": "Preco é obrigatório",
+    "alertDescription": "Descricao é obrigatório",
+    "alertQuantity": "Quantidade é obrigatório"
 
 }

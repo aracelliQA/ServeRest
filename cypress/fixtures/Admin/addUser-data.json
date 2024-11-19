@@ -3,5 +3,8 @@
  "name": "AAA User",
  "email": "aaauser@gmail.com",
  "password": "AAAuserTest",
- "alerta": "Este email já está sendo usado"
+ "alert": "Este email já está sendo usado",
+ "alertName": "Nome é obrigatório",
+ "alertEmail": "Email é obrigatório",
+ "alertPassword": "Password é obrigatório"
 }
