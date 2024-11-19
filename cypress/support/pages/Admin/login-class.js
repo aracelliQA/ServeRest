@@ -4,7 +4,7 @@ import '../../commands'
 
 class login {
     invalidUsername(){
-        cy.login();
+        cy.loginAdmin();
         cy.wait(2000);
         cy.visit('/admin/home');
         cy.get(el.logoutButton).click();
@@ -16,7 +16,7 @@ class login {
     }
 
     invalidPassword(){
-        cy.login();
+        cy.loginAdmin();
         cy.wait(2000);
         cy.visit('/admin/home');
         cy.get(el.logoutButton).click();

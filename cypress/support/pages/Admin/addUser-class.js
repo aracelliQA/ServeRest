@@ -4,7 +4,7 @@ import '../../commands'
 
 class addUser {
     requiredFields(){
-        cy.login();
+        cy.loginAdmin();
         cy.wait(2000);
         cy.visit('/admin/cadastrarusuarios');
         cy.wait(2000);
@@ -15,7 +15,7 @@ class addUser {
     }
 
     add(){
-        cy.login();
+        cy.loginAdmin();
         cy.wait(2000);
         cy.visit('/admin/cadastrarusuarios');
         cy.wait(2000);
@@ -28,6 +28,8 @@ class addUser {
     }
 
     addExisting(){
+        cy.loginAdmin();
+        cy.wait(2000);
         cy.visit('/admin/cadastrarusuarios');
         cy.wait(2000);
         cy.get(el.title).should('be.visible').and('contain',data.title);

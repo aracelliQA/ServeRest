@@ -1,7 +1,7 @@
 
 const el = require ('../support/attributes/Admin/login-attributes').ELEMENTS;
 
-Cypress.Commands.add('login', (
+Cypress.Commands.add('loginAdmin', (
     username = 'novaes.aracelli@gmail.com', 
     password = 'teste123.' ) => {
         cy.session([username, password], () => {

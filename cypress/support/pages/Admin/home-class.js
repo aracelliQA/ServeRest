@@ -4,7 +4,7 @@ import '../../commands'
 
 class home {
     validate(){
-        cy.login();
+        cy.loginAdmin();
         cy.wait(2000);
         cy.visit('/admin/home')
         cy.wait(2000);

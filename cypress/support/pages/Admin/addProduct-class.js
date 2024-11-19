@@ -4,7 +4,7 @@ import '../../commands'
 
 class addProducts {
     requiredFields(){
-        cy.login();
+        cy.loginAdmin();
         cy.wait(2000);
         cy.visit('/admin/cadastrarprodutos');
         cy.wait(2000);
@@ -16,7 +16,7 @@ class addProducts {
     }
 
     add(){
-        cy.login();
+        cy.loginAdmin();
         cy.wait(2000);
         cy.visit('/admin/cadastrarprodutos');
         cy.wait(2000);

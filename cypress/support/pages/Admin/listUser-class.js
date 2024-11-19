@@ -4,7 +4,7 @@ import '../../commands'
 
 class listUser {
     list(){
-        cy.login();
+        cy.loginAdmin();
         cy.wait(2000);
         cy.visit('/admin/listarusuarios');
         cy.wait(2000);
