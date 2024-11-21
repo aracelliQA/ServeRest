@@ -3,5 +3,6 @@ export const ELEMENTS = {
     searchButton: '[data-testid="botaoPesquisar"]',
     addButton: '[data-testid="adicionarNaLista"]',
     productList: '[class="row espacamento"]',
-    productDetailsButton: '[data-testid="product-detail-link"]'
+    productDetailsButton: '[data-testid="product-detail-link"]',
+    logout: '[data-testid="logout"]'
 }

@@ -24,6 +24,15 @@ class home {
         cy.contains(data.productName).should('be.visible');
         cy.contains(data.productPrice).should('be.visible');
     }
+
+    logout(){
+        cy.loginCustomer();
+        cy.wait(2000);
+        cy.visit('/home')
+        cy.get(el.logout).click();
+        cy.url().should('be.equal', data.url)
+
+    }
 }
 
 export default new home();
