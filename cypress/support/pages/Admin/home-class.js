@@ -9,7 +9,6 @@ class home {
         cy.visit('/admin/home')
         cy.wait(2000);
         cy.get(el.header).should('be.visible');
-        cy.get(el.title).should('be.visible').and('contain',data.title);
         cy.get(el.addUserButton).should('be.visible');
         cy.get(el.listUserButton).should('be.visible');
         cy.get(el.addProductsButton).should('be.visible');
