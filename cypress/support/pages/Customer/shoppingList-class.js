@@ -1,9 +1,9 @@
-const el = require ('../../attributes/Customer/shopList-attributes').ELEMENTS
-const data = require ('../../../fixtures/Customer/shopList-data.json')
-import productPage from '../Customer/productPage-class'
+const el = require ('../../attributes/Customer/shoppingList-attributes').ELEMENTS
+const data = require ('../../../fixtures/Customer/shoppingList-data.json')
+import productPage from './productPage-class'
 import '../../commands'
 
-class shopList {
+class shoppingList {
     emptyList(){
         cy.loginCustomer();
         cy.wait(2000);
@@ -32,4 +32,4 @@ class shopList {
     }
 }
 
-export default new shopList();
+export default new shoppingList();
